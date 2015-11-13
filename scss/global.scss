@@ -120,19 +120,35 @@ html{
 						}
 					}
 				}
+				input{
+					display: none;
+
+					&[type="radio"][name="mainButton1"]:checked ~ .wrapper .grid-1-3 .button .modal-info.m1 {
+        		height: 220px;
+			    }
+			    &[type="radio"][name="mainButton2"]:checked ~ .wrapper .grid-1-3 .button .modal-info.m2 {
+        		height: 220px;
+
+			    }
+			    &[type="radio"][name="mainButton3"]:checked ~ .wrapper .grid-1-3 .button .modal-info.m3 {
+        		height: 220px;
+			    }
+				}
 				div.wrapper{
 					position: relative;
 					padding-top: 50px;
 					margin: 0 auto;
 					width: 800px;
 					z-index: 2;
+
 					div.grid-1-3{
-						p{
+						position: relative;
+						div.button{
+							border-radius: 100%;
+							position: relative;
 							text-align: center;
 							box-shadow: 0px 1px 7px rgba(black,0.3),
 								0px -1px 7px rgba(black,0.3);
-							border-radius: 100%;
-							cursor: pointer;
 							width: 200px;
 							height: 200px;
 							border-radius: 100%;
@@ -140,6 +156,7 @@ html{
 							padding-top: 60px;
 							font-size: 3em;
 							letter-spacing: 2px;
+							z-index: 1;
 
 							&:hover{
 								
@@ -147,29 +164,62 @@ html{
 							&:active{
 								box-shadow: 0px 1px 3px rgba(black,0.3),
 									0px -1px 3px rgba(black,0.3);
-								letter-spacing: 1.5px;
 							}
 
 							&.personal{
 								background-color: $lightBrand;
-								&:active{
-									
-								}
 							}
 							&.responsive{
-								background-color: $mediumBrand;
-								&:active{
-								
-								}
+								background-color: $mediumBrand;	
 							}
 							&.unique{
 								background-color: $darkBrand;
-								&:active{
-								}
 							}
 						}
-
+						label{
+							border-radius: 100%;
+							width: 100%;
+				      height: 100%;
+				      cursor: pointer;
+				      position: absolute;
+				      top: 0;
+				      right: 0;
+				      bottom: 0;
+				      left: 0;
+							z-index: 3;
+						}
 					}
+				}
+				div.modal-info{
+					height: 0px;
+					background: lighten($brand,5%);
+			    position: absolute;
+			    bottom: -120px;
+			    left: 50%;
+			    width: 130%;
+			    transform: translate(-50%, -50%);
+			    transition: height 0.3s ease 0s;
+			    overflow: hidden;
+			    border-radius: 5%;
+					box-shadow: 0px 1px 7px rgba(black,0.3),
+						0px -1px 7px rgba(black,0.3);
+			    &.m1{
+			    	background-color: $lightBrand;
+
+			    }
+			    &.m2{
+			    	background-color: $mediumBrand;
+			    	
+			    }
+			    &.m3{
+			    	background-color: $darkBrand;
+			    	
+			    }
+			    p{
+			    	font-size: .5em;
+			    	padding: 5px;
+			    }
+					
 				}
 				div.img{
 					position: absolute;

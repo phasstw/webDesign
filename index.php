@@ -3,6 +3,29 @@
 	</header>
 <!--///////////////////////////////////// MAIN-->
 	<section id="main" class="main">
+
+
+		<script type="text/javascript">
+			var $ = jQuery.noConflict();
+			$(document).ready(function() {
+					var radioButtons = [false, false, false];
+
+					$("input[type='radio'].radioButton").click(function() {
+						if( radioButtons[$(this).index("input[type='radio']")] == true ) { // if clicking on self
+							$(this).prop('checked', false);								   // unselect self
+							radioButtons[$(this).index("input[type='radio']")] = false;
+						}
+						else {															// if clicking another
+							radioButtons = [false, false, false];
+							$("input[type='radio'].radioButton").prop('checked', false);	// unselect all
+							radioButtons[$(this).index("input[type='radio']")] = true;	// select self
+							$(this).prop('checked', true);
+						}
+					});
+				});
+		</script>
+
+
 		<div class="img cloud"></div>
 		<header>
 			<nav>
@@ -15,15 +38,42 @@
 			<h1>Hello. My name is Tyler Phass.</h1>
 			<h2>And I am a <span>nerd</span> who loves making websites and hiking mountains.</h2>
 		</div>
-		<div class="wrapper">
+		<input id="mainButton-left" class="radioButton" type="radio" name="mainButton1"></input>
+		<input id="mainButton-center" class="radioButton" type="radio" name="mainButton2"></input>
+		<input id="mainButton-right" class="radioButton" type="radio" name="mainButton3"></input>
+		<div class="wrapper">			
 			<div class="grid-1-3">
-				<p class="personal nh">Personal</p>
+				<div class="button personal nh">
+					Personal
+					<label for="mainButton-left"></label>
+					<div class="modal-info m1">
+						<p>
+							Communication is key to any project. That is why it a point to be easy to contact.
+						</p>
+					</div>
+				</div>
 			</div>
 			<div class="grid-1-3">
-				<p class="responsive nh">Responsive</p>
+				<div class="button responsive nh">
+					Responsive
+					<label for="mainButton-center"></label>
+					<div class="modal-info m2">
+						<p>
+							My sites are mobile and tablet friendly
+						</p>
+					</div>
+				</div>
 			</div>
 			<div class="grid-1-3">
-				<p class="unique nh">Unique</p>
+				<div class="button unique nh">
+					Unique
+					<label for="mainButton-right"></label>
+					<div class="modal-info m3">
+						<p>
+							Unique design message here.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="img mountain"></div>
