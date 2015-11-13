@@ -243,6 +243,17 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
+	"\/screenshot.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 165394,
+		"inputAbbreviatedPath": "\/screenshot.jpg",
+		"outputAbbreviatedPath": "\/screenshot.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/scss\/_bits.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
