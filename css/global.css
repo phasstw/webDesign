@@ -406,7 +406,8 @@ html body {
   html body section {
     height: 755px;
     position: relative;
-    border-bottom: 3px dashed #8b8b8b; }
+    border-bottom: 3px dashed #8b8b8b;
+    overflow: hidden; }
     html body section h1, html body section h2 {
       display: table;
       margin: 0 auto; }
@@ -545,7 +546,7 @@ html body {
           background-color: #B4CEAA; }
         html body section.main div.modal-info p {
           font-size: .5em;
-          padding: 5px; }
+          padding: 10px; }
       html body section.main div.img {
         position: absolute;
         z-index: 1; }

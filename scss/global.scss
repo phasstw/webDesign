@@ -17,6 +17,7 @@ html{
 			height: 755px;
 			position: relative;
 			border-bottom: 3px dashed lighten($mainFont,10%);
+			overflow: hidden;
 
 			h1,h2{
 				display: table;
@@ -217,7 +218,7 @@ html{
 			    }
 			    p{
 			    	font-size: .5em;
-			    	padding: 5px;
+			    	padding: 10px;
 			    }
 					
 				}

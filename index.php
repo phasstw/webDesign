@@ -48,7 +48,7 @@
 					<label for="mainButton-left"></label>
 					<div class="modal-info m1">
 						<p>
-							Communication is key to any project. That is why it a point to be easy to contact.
+							Communication is key to any project. That is why I make it a point to be easy to contact throughout the entirity of your web project. From start to finish, I am here to work with you.
 						</p>
 					</div>
 				</div>
@@ -70,7 +70,7 @@
 					<label for="mainButton-right"></label>
 					<div class="modal-info m3">
 						<p>
-							Unique design message here.
+							Custom designs for every client. I am here to help you make your web dreams come true.
 						</p>
 					</div>
 				</div>
