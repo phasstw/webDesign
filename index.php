@@ -82,6 +82,21 @@
 <!--///////////////////////////////////// ABOUT-->
 	<section id="about" class="about">
 		<h1>About Me</h1>
+		<h2>I have experience working with:</h2>
+		<h2>Things that I enjoy:</h2>
+		<p>CSS3</p>
+		<p>HTML5</p>
+		<p>MySQL</p>
+		<p>WordPress</p>
+		<p>SASS</p>
+		<p>PHP</p>
+		<p>Javascript & Jquery</p>
+		<p>Github</p>
+		<p>Playing with my cat</p>
+		<p>Smoking Pipe Tobacco</p>
+		<p>Reading Theology</p>
+		<p>Writing Poetry</p>	
+		<div class="portrait"></div>
 		<a href="#main" class="scrollButton up fa fa-chevron-circle-up"></a>
 		<a href="#portfolio" class=" scrollButton down fa fa-chevron-circle-down"></a>
 	</section>
