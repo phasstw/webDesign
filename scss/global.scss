@@ -14,7 +14,8 @@ html{
 		}
 /////////////////////////////////////////// ALL SECTIONS
 		section{
-			height: 755px;
+			height: 100vh;
+			min-height: 750px;
 			position: relative;
 			border-bottom: 3px dashed lighten($mainFont,10%);
 			overflow: hidden;
@@ -88,6 +89,8 @@ html{
 				}
 
 				div.brand{
+					display: table;
+					margin: 0 auto;
 					position: relative;
 					z-index: 2;
 					h1{
@@ -219,6 +222,7 @@ html{
 			    p{
 			    	font-size: .5em;
 			    	padding: 10px;
+			    	text-align: left;
 			    }
 					
 				}
@@ -255,6 +259,7 @@ html{
 			&.about{
 				background-color: $lightBrand;
 
+				
 				h1{
 				}
 				h2{
@@ -277,13 +282,17 @@ html{
 
 
 				div.portrait{
+					position: absolute;
+					transform: translate(-50%, -50%);
+					top: 50%;
+					left: 50%;
 					margin: 0 auto;
 					width: 400px;
 					height: 400px;
 					border-radius: 100%;
 					border: 1px solid rgba(black,0.5);
 					box-shadow: 0px 1px 7px rgba(black,0.3);
-					background: url("../images/portrait.jpg") no-repeat scroll 0px 0px / 400px auto;
+					background: white no-repeat scroll 0px 0px / 400px auto;
 				}
 
 
@@ -300,8 +309,47 @@ html{
 
 			&.contact{
 				background-color: $darkBrand;
+				h1{
+
+				}
+				p{
+					font-size: 4em;
+				}
+				form{
+					display: table;
+					margin: 0 auto;
+					padding-top: 100px;
+					font-size: 2.5em;
 
 
+					input{
+						display: block;
+						width: 100%;
+						border: 1px solid rgba(black,0.5);
+						border-radius: 3px;
+						text-align: center;
+						margin-bottom: 20px;
+						box-shadow: 0px 1px 2px rgba(black,0.5);
+
+						&:last-of-type{
+							width: 50%;
+							margin: 0 auto;
+
+						}
+
+
+
+					}
+					textarea{
+						border-radius: 3px;
+						border: 1px solid rgba(black,0.5);
+						text-align: center;
+						margin-bottom: 20px;
+						padding: 10px;
+
+
+					}
+				}
 			}
 		}
 

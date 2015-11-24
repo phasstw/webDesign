@@ -48,7 +48,7 @@
 					<label for="mainButton-left"></label>
 					<div class="modal-info m1">
 						<p>
-							Communication is key to any project. That is why I make it a point to be easy to contact throughout the entirity of your web project. From start to finish, I am here to work with you.
+							Communication is key to any project. That is why I make it a point to be easy to contact throughout the entirity of your web project.
 						</p>
 					</div>
 				</div>
@@ -59,7 +59,7 @@
 					<label for="mainButton-center"></label>
 					<div class="modal-info m2">
 						<p>
-							My sites are mobile and tablet friendly
+							My sites are mobile and tablet friendly! That means that no matter what device is being used to view your site, it will look amazing and be easy to use!
 						</p>
 					</div>
 				</div>
@@ -70,7 +70,7 @@
 					<label for="mainButton-right"></label>
 					<div class="modal-info m3">
 						<p>
-							Custom designs for every client. I am here to help you make your web dreams come true.
+							I make custom designs for every client. I am here to make your website look exactly how you want it to.
 						</p>
 					</div>
 				</div>
@@ -96,7 +96,7 @@
 		<p>Smoking Pipe Tobacco</p>
 		<p>Reading Theology</p>
 		<p>Writing Poetry</p>	
-		<div class="portrait"></div>
+		<div class="portrait" role="img"></div>
 		<a href="#main" class="scrollButton up fa fa-chevron-circle-up"></a>
 		<a href="#portfolio" class=" scrollButton down fa fa-chevron-circle-down"></a>
 	</section>
@@ -111,6 +111,14 @@
 <!--///////////////////////////////////// CONTACT-->
 	<section id="contact" class="contact">
 		<h1>Contact</h1>
+		<p>Want to hire me for your next web project?</p>
+		<p>Or, just want to ask me a question?</p>
+		<form id="contactform" method="post" action="js/processForm.php" novalidate="novalidate">
+			<input id="name" type="text" placeholder="Your Name" name="name">
+			<input id="email" type="text" placeholder="YourEmail@Somewhere.Something" name="email">
+			<textarea id="message" style="resize:none" placeholder="Your Message" cols="40" rows="2" name="message"></textarea>
+			<input id="send" type="submit" value="Send">
+		</form>
 		<a href="#main" class="scrollButton down fa fa-chevron-circle-up"></a>
 	</section>
 
